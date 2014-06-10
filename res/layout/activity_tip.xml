@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Enter number here" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/tipBtn20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipBtn15"
+        android:layout_alignBottom="@+id/tipBtn15"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/tipBtn15"
+        android:onClick="tipCalculate"
+        android:tag="20"
+        android:text="20%" />
+
+    <Button
+        android:id="@+id/tipBtn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipBtn10"
+        android:layout_alignBottom="@+id/tipBtn10"
+        android:layout_centerHorizontal="true"
+        android:onClick="tipCalculate"
+        android:tag="15"
+        android:text="15%" />
+
+    <Button
+        android:id="@+id/tipBtn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="118dp"
+        android:layout_toLeftOf="@+id/tipBtn15"
+        android:onClick="tipCalculate"
+        android:tag="10"
+        android:text="10%" />
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="74dp"
+        android:text="Tip is:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/totalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipText"
+        android:layout_alignBottom="@+id/tipText"
+        android:layout_alignLeft="@+id/tipBtn15"
+        android:layout_marginLeft="15dp"
+        android:text="$0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/errText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="33dp"
+        android:textColor="#FF0000"
+        android:text="" />
+
+</RelativeLayout>
