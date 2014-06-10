@@ -4,3 +4,8 @@ Time spent
 
 * Android programming: 2 hours
 * Git setup: 1.5 hours
+
+
+Walkthrough of all user stories:
+
+![Video Walkthrough](snapshot.gif)
