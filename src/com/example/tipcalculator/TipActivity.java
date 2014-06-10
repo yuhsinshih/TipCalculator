@@ -43,7 +43,7 @@ public class TipActivity extends Activity {
 			errMsg.setText("This is not a valid number");
 			return;
 		}
-		tipTotal.setText("$"+String.valueOf(tip)); 
+		tipTotal.setText("$"+String.format("%.2f", tip)); 
 	}
 	
 }
